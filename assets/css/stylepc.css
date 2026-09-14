@@ -201,6 +201,20 @@ section h2::after {
     cursor: pointer;
 }
 
+/* Botões dos cursos */
+.card .botao {
+    width: 100%;
+    min-height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card .botao {
+    font-size: 16px;
+}
 .botao:hover {
     background: #0B2C6B;
 }
