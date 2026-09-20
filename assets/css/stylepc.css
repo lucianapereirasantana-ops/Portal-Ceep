@@ -186,6 +186,17 @@ section h2::after {
     cursor: pointer;
 }
 
+/* Horarios de Orientçoes -Serviços */
+
+.horarios {
+
+   width: fit-content;
+   margin: 15px auto;
+   padding-left: 20px;
+    
+}
+
+
 /* Botões Genericos */
 .botao {
     display: inline-block;

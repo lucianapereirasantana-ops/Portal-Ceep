@@ -34,26 +34,99 @@ HTML
         <div class="cards">
 
             <div class="card">
-                <h3>Atendimento ao Estudante</h3>
-                <p>
-                    Informações gerais sobre matrícula, documentação
-                    e calendário escolar.
-                </p>
+          <h3>Atendimento ao Estudante</h3>
+                
+            <p> Informações sobre matrículas, documentação necessária e calendário escolar.</p>
+
+          <a href="#" class="botao">
+           Matrículas
+         </a>
+
+         <a href="assets/docs/calendario.pdf" target="_blank" class="botao">
+          Calendário Escolar
+          </a>
             </div>
 
             <div class="card">
                 <h3>Orientações</h3>
-                <p>
-                    Esclarecimento de dúvidas frequentes dos estudantes
-                    e responsáveis.
+                 <p>
+        Confira informações importantes para estudantes e responsáveis sobre a rotina escolar.
                 </p>
-            </div>
+
+            <button class="botao" onclick="mostrarCurso('orientacoes')">
+            Ver orientações
+           </button>
+
+           <div id="orientacoes" style="display:none;">
+
+            <br>
+
+        <h4>Fardamento</h4>
+        <p>
+            O fardamento escolar deve seguir o padrão adotado pelo Governo do Estado ou pelo curso técnico. 
+            O estudante deve utilizar a farda correspondente à sua unidade ou curso, acompanhada de calça preta 
+            ou azul e tênis fechado nas cores preto, branco ou azul. O uso do fardamento é recomendado durante 
+            as atividades escolares e demais momentos definidos pela unidade.
+
+        </p>
+
+        <br>
+
+        <h4>Horário de funcionamento</h4>
+        <p>
+           O CEEP funciona nos turnos da manhã, tarde e noite:
+
+          <ul class="horarios">
+          <li><strong>Manhã:</strong> 8h30 às 12h</li>
+          <li><strong>Tarde:</strong> 13h30 às 18h</li>
+          <li><strong>Noite:</strong> 18h às 21h40</li>
+          </ul>
+
+          Os horários seguem o turno de cada curso.
+
+        </p>
+
+        <br>
+
+        <h4>Rotina escolar</h4>
+        <p>
+            A rotina dos estudantes envolve participação nas aulas, realização de atividades,
+            trabalhos e avaliações, acompanhamento das disciplinas e participação em projetos
+            e atividades da escola. Nos cursos técnicos, o estudante também desenvolve
+            conhecimentos relacionados à sua formação profissional.
+        </p>
+
+        <br>
+
+        <h4>Responsabilidades do aluno</h4>
+        <p>
+            O estudante deve participar das aulas, acompanhar as atividades, cumprir as
+            tarefas propostas, acompanhar seu desempenho escolar e seguir as orientações
+            da unidade de ensino.
+        </p>
+
+        <br>
+
+        <h4>Notas e desempenho</h4>
+        <p>
+            As notas e a frequência dos estudantes são informadas em sala de aula pelos professores ou podem 
+            ser consultadas diretamente na secretaria da unidade. Em caso de dúvidas, o estudante deve procurar 
+            o professor responsável ou a secretaria.
+
+        </p>
+
+    </div>
+</div>
 
             <div class="card">
                 <h3>Suporte</h3>
                 <p>
-                    Canal para solicitação de ajuda e informações.
+             Entre em contato com o Portal CEEP para tirar dúvidas ou solicitar informações.
                 </p>
+
+               <a href="mailto:EMAIL_DO_PORTAL" class="botao">
+                  portalceep.m4@gmail.com
+                </a>
             </div>
 
         </div>
@@ -66,6 +139,19 @@ HTML
         <p>Projeto desenvolvido para apresentação na FETEC.</p>
         <img src="assets/img/bandeira-bahia.png" alt="Bandeira do Estado da Bahia" class="bandeira-bahia">
     </footer>
+
+<script>
+    function mostrarCurso(id) {
+        var curso = document.getElementById(id);
+
+        if (curso.style.display === "none" || curso.style.display === "") {
+            curso.style.display = "block";
+        } else {
+            curso.style.display = "none";
+        }
+    }
+</script>
+
 
 </body>
 </html>
