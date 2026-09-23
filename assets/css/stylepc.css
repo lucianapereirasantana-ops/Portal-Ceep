@@ -106,7 +106,7 @@ nav a.ativo {
 
 /* Espaçamento e Estilo das Seções */
 section {
-    padding: 120px 8% 70px 8%;
+    padding: 160px 8% 70px 8%;
 }
 
 section:not(.banner):nth-child(even){
@@ -195,7 +195,6 @@ section h2::after {
    padding-left: 20px;
     
 }
-
 
 /* Botões Genericos */
 .botao {
@@ -321,4 +320,10 @@ footer p {
     .cards {
         grid-template-columns: 1fr;
     }
+}
+
+/* Transição entre páginas */
+
+@view-transition {
+    navigation: auto;
 }
