@@ -204,6 +204,16 @@ section h2::after {
     cursor: pointer;
 }
 
+/* Video do Tiago */
+
+.video-escola {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 
 /* Horarios de Orientçoes -Serviços */
 
@@ -342,12 +352,3 @@ footer p {
 }
 
 /* Transição entre páginas */
-
-@view-transition {
-    navigation: auto;
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-    animation-duration: 0.01s;
-}
