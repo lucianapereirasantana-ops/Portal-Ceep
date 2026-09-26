@@ -311,8 +311,10 @@ footer p {
 }
 
 /* Responsividade */
+
 @media (max-width: 900px) {
     header {
+        position: relative;
         height: auto;
         flex-direction: column;
         padding: 20px;
@@ -322,10 +324,15 @@ footer p {
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 20px;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 8px 12px;
     }
 
     .banner {
-        margin-top: 180px;
+        margin-top: 0;
     }
 
     .banner h2 {
